@@ -22,8 +22,7 @@ namespace GitHumMonitorApp
 
             string requestBody = await new StreamReader(req.Body).ReadToEndAsync();
             dynamic data = JsonConvert.DeserializeObject(requestBody);
-            string name = data ?? "Name: "+data.pusher.name+", email: "+ data.pusher.email;
-            log.LogInformation("pusher Name" + name);
+
             //Todo - Do something with the data
             log.LogInformation(requestBody);
             //update
