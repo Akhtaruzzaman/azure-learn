@@ -28,6 +28,7 @@ namespace GitHumMonitorApp
             log.LogInformation("Name");
             log.LogInformation(data.pusher.name);
             //Todo - Do something with the data
+            // Push email
             log.LogInformation(requestBody);
             //update
             return new OkResult();
